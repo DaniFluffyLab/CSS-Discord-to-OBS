@@ -1,0 +1,29 @@
+/* 
+PT: Regra que torna o fundo da página transparente e desliga a barra de rolagem, já vem no OBS Browser 
+EN: Rule that set page background transparent and disable the scroll bar (OBS Browser default set)
+*/
+body {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+/*
+PT: Regra que procura os elementos que estão abaixo da call e os define como transparente
+EN: Rule that search elements below voice call and set transparent 
+*/
+[class*="callContainer"],
+[class*="wrapper"],
+[class*="chat"],
+[class*="bg"],
+[class*="app"] {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*
+PT: Regra que torna sempre visível o nome do participante da call. É opcional, se não quiser essa função, basta não copiar essa regra.
+EN: Rule that set call members name always visible. It's optional, if you wont that function, just ignore that rule 
+*/
+[class*="overlayTitle"] {
+    opacity: 100;
+}
